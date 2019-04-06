@@ -152,11 +152,9 @@ color: dodgerblue !important;
 .slider{
     width: 100%;
     height: 700px;
-    background-image: url(..//img/sliderImage.JPG);
+    background-image: url("http://i67.tinypic.com/25ix30m.jpg");
     background-size:cover;
     background-position:center;
-    background-attachment: fixed;
-    
 }
 
 .slider-overlay{
