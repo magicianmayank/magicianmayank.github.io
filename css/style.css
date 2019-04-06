@@ -1,0 +1,641 @@
+/*=============================
+      BASIC PROPERTIES STARTS
+===============================*/
+body{
+    overflow-x: hidden;
+}
+*
+{
+    padding:0;
+    margin:0;
+}
+/*=============================
+      BASIC PROPERTIES ENDS
+===============================*/
+
+/*=============================
+     LOADER STARTS
+===============================*/
+.spinner {
+    
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color:white;
+
+  position: absolute;
+top: 48%;
+left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+    z-index:9999;
+    
+}
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ff6347;
+z-index: 999999;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/*=============================
+      LOADER ENDS
+===============================*/
+
+/*=============================
+  NAVIGATION PROPERTIES STARTS
+===============================*/
+
+#navbar-logo{
+    height: 50px;
+    width: 300px;
+}
+
+.navbar{
+    padding: 22px 0px;
+    border: 0px !important;
+    transition: all 1s ease-in-out;
+}
+
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: all 0.5s ease-out;
+}
+
+.navbar ul li a:hover , .navbar ul li a:focus{
+color: dodgerblue !important;
+}
+
+
+#MyLocation{
+    border: 2px solid dodgerblue;
+    border-radius: 50px;
+}
+
+#MyLocation:hover{
+    border: 2px solid dodgerblue;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color:transparent !important;
+}
+
+
+
+.navbar-inverse{
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 800px)
+.navbar-toggle {
+    display: block;
+    color: transparent !important;
+ 
+    border: none !important;
+}
+
+.navbar-toggle:hover{
+    background-color: dodgerblue !important;
+}
+
+.navbar-toggle:active{
+    background-color: dodgerblue !important;
+}
+
+.navbar-toggle:visited{
+    background-color: transparent !important;
+}
+
+
+/*=============================
+  NAVIGATION PROPERTIES ENDS
+===============================*/
+
+/*=============================
+      STICKY NAVIGATION
+===============================*/
+
+.secondary{
+    background-color: black !important; 
+}
+
+
+/*=============================
+        SLIDER STARTS
+===============================*/
+
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(..//img/sliderImage.JPG);
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    
+}
+
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.40);
+    position: relative;
+}
+
+.cta-div{
+    margin-top: 60px;
+}
+.slider-content{
+    width: 100%;
+    position: absolute;
+    top: 39%;
+}
+
+.btn1{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.btn1:hover{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.btn2{
+    padding: 13px 18px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-bottom-right-radius: 15px;
+    transition: all 0.5s ease-out;
+    margin-left: -6px;
+}
+
+.btn2:hover{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.social-networks a.fa{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 3px;
+    text-align: center;
+    font-size: 17px; 
+    transition: all 0.5s ease-out;
+}
+
+.social-networks a.fa.fa-facebook:hover{
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    text-decoration: none;
+}
+
+.social-networks a.fa.fa-instagram:hover{
+    border-color: deeppink;
+    background-color: deeppink;
+    text-decoration: none;
+}
+
+.social-networks a.fa.fa-youtube:hover{
+    border-color: red;
+    background-color: red;
+    text-decoration: none;
+}
+
+.social-networks a.fa.fa-envelope:hover{
+    border-color: orangered;
+    background-color: orangered;
+    text-decoration: none;
+}
+
+.slider .text{
+    display: inline-block;
+    font-size: 50px;
+    color: whitesmoke;
+    
+}
+
+.ml11 {
+  font-weight: bold;
+  font-size: 2.5em;
+  font-family: Abel;    
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letters{
+  display: inline-block;
+  line-height: 1em;
+  color: ghostwhite;
+  transition: all 1.5s ease-out;    
+}
+
+
+/*=============================
+        SLIDER ENDS
+===============================*/
+
+
+/*=============================
+        SERRVICES STARTS
+===============================*/
+ 
+.service-area{
+    
+}
+.service-title{
+    text-align: center;
+    padding-top: 35px;
+    height: 100px;
+    font-weight: bolder;
+    background-image: url(..//img/kentech-black-grunge-background.png);
+    font-family:abel;
+    color: #D0D0D0;
+    background-color: #383838;
+    width: 100% !important;
+}
+.service-area p{
+    margin-bottom: -5px;
+}
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width:120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background-color: #34495e;
+}
+
+.service-wrap::before{
+    top=-37px;
+    left: 100%;
+}
+
+.service-wrap:hover:before{
+    opacity: 1;
+    left: -27px;
+}
+
+.service-wrap::after{
+    right: 100%;
+    bottom: -37px;
+}
+
+.service-wrap:hover:after{
+    right: -27px;
+    opacity: 1;
+}
+
+.service-wrap:hover{
+    color: whitesmoke;
+}
+
+.service-wrap:h3{
+    color: whitesmoke;
+}
+
+.service-wrap:hover h3{
+    color: whitesmoke;
+}
+
+.service-wrap:hover h3:after{
+    background-color: whitesmoke;
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*=============================
+        SERRVICES ENDS
+===============================*/
+
+/*=============================
+        GALLERY STARTS
+===============================*/
+.gallery-title{
+    text-align: center;
+    padding-top: 35px;
+    font-family: abel;
+    font-weight: bolder;
+    color: #D0D0D0;
+    background-color: #383838;
+    background-image: url(..//img/kentech-black-grunge-background.png);
+    height: 100px;
+}
+.row{
+    margin-top: 25px;
+}
+.row.no-gutters [class*=col-]
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+    
+}
+
+.img-wrapper img{
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.3);
+    cursor: zoom-in;
+}
+
+#gallery-1{
+    height: 224px;
+}
+
+#gallery-2{
+    height: 224px;
+}
+
+#gallery-3{
+    height: 224px;
+}
+#gallery-5{
+    height: 450px;
+}
+#gallery-6{
+    height: 450px;
+}
+#gallery-7{
+    height: 450px;
+}
+#gallery-8{
+    height: 450px;
+}
+#gallery-9{
+    height: 450px;
+}
+#gallery-10{
+    height: 450px;
+}
+#gallery-11{
+   height: 450px;
+
+}
+#gallery-12{
+height: 450px;
+}
+
+.gallery-class img{
+   
+    border-radius: 5px;
+}
+
+
+/*=============================
+        GALLERY ENDS
+===============================*/
+
+
+/*=============================
+        TESTIMONIALS STARTS
+===============================*/
+.testimonials-title{
+    font-family: abel;
+}
+.carousel-inner img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.testimonials{
+    background-image: url(..//img/testimonial-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+
+.border-bottom{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.carousel-inner p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: whitesmoke;
+    
+}
+
+/*=============================
+        TESTIMONIALS ENDS
+===============================*/
+
+
+/*=============================
+        VIDEO STARTS
+===============================*/
+
+.video-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(..//img/videos1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    
+    background-attachment: fixed;
+}
+
+.videos-title{
+    color: whitesmoke;
+    font-family: abel;
+    margin-top: -50px;
+}
+.video-mask{
+    transition: all 0.5s ease-out;
+}
+.video-mask:hover{
+    transform: scale(1.05);
+}
+
+
+/*=============================
+        VIDEO ENDS
+===============================*/
+
+/*=============================
+        CONTACT STARTS
+===============================*/
+
+#contact-title{
+ font-family: abel;
+ 
+}
+
+.form-control{
+    border-radius: 0px !important;
+    border: 1px solid #34495e !important;
+}
+
+.contact-form button.btn{
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-family: abel;
+}
+
+.contact-info{
+    float:left;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    background-color: darkcyan;
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
+.contact-info .fa{
+    color: whitesmoke;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+.contact-info p{
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+/*=============================
+        CONTACT ENDS
+===============================*/
+
+/*=============================
+        FOOTER STARTS
+===============================*/
+
+.footer{
+   width: 100%;
+    height: 100px;
+    background-color: black;
+    color:darkgrey;
+    padding-top: 15px;
+    font-family: arial;
+}
+
+
+
+
+
+
+
+
+
